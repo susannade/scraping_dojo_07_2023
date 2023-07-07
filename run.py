@@ -4,7 +4,7 @@ from quotes import ScrapingProcess
 
 
 if __name__ == "__main__":
-    env_file_path = 'variables.env'
+    env_file_path = '.env'
     driver_builder = DriverBuilder()
     scraping_process = ScrapingProcess(env_file_path, driver_builder)
     scraping_process.run()

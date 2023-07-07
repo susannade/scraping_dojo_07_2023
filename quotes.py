@@ -19,7 +19,7 @@ class Quote:
 
 class ScrapingProcess:
     def __init__(self, env_file_path, driver_builder, timeout=60):
-        load_dotenv(dotenv_path=env_file_path)
+        load_dotenv(env_file_path)
         self.proxy = os.getenv("PROXY")
         self.input_url = os.getenv("INPUT_URL")
         self.output_file = os.getenv("OUTPUT_FILE")
